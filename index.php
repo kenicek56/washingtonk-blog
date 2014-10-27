@@ -5,9 +5,8 @@
 </head>
 <body>
 <?php
-
-echo "kenice likes cookies";
-
+      // 
+      require_once(__DIR__ . "/controller/create-db.php");
 ?>
 </body>
 </html>
