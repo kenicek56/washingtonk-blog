@@ -11,7 +11,15 @@ die("Error: " . $connection->connect_error);
 $exists = $connection->select_db($database);
 
 if(!$exists){
-	echo "Database does not exists";
+	// sends commands to the database
+	$query = $connection->query("CREATE DATABASE $database");
+	
+// checks if our query is succesful
+if($query){
+
+echo "Successfully created database " . $database;
+
+}
 
 }
 
