@@ -22,7 +22,7 @@ if(!$exists){
 // checks if our query is successful
 	if($query){
 
-	echo "<p>Successfully created database: " . $database; . "</p>";
+	echo "<p>Successfully created database: " . $database . "</p>";
 
 	}
 }
