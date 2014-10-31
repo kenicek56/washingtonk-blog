@@ -22,14 +22,14 @@ if(!$exists){
 // checks if our query is successful
 	if($query){
 
-	echo "Successfully created database: " . $database;
+	echo "<p>Successfully created database: " . $database; . "</p>";
 
 	}
 }
 
 //this else echos that my database is created
 else {
-	echo "Database already exists";
+	echo "<p>Database already exists.</p>";
 }
 // creates a blog post
 $query = $connection->query("CREATE TABLE posts (" 
@@ -39,6 +39,13 @@ $query = $connection->query("CREATE TABLE posts ("
 	. "post text NOT NULL,"
 	. "PRIMARY KEY (id))");
 // 1 means there are 11 values.
+
+if($query) {
+	echo "<p>Successfully created table: posts</p>";
+}
+else {
+	echo "<p>$connection->error</p>";
+}
 
 $connection->close();
 
