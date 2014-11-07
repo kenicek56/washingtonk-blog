@@ -15,6 +15,7 @@
 	<!--connects to bootstrap and the main.css-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/Main.css">
+    
 </head>
 <body>
 
