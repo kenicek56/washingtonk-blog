@@ -5,3 +5,7 @@ body{
   @media screen and (max-width:320px) {
    	html{ background-color: green; }
 }
+
+ @media screen and (max-width:1024px) {
+   	html{ background-color: green; }
+}
