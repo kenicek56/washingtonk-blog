@@ -1,6 +1,10 @@
-<h1>Create Blog Post</h1>
+<?php
+require_once (__DIR__ . "/../model/config.php");
+?>
 
-<form>
+<h1>Create Blog Post</h1>
+<!-- to send information or to gin imformation-->
+<form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<div>
 		
 			<label for="title">Title: </label>
