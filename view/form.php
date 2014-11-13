@@ -3,7 +3,7 @@ require_once (__DIR__ . "/../model/config.php");
 ?>
 
 <h1>Create Blog Post</h1>
-<!-- to send information or to gin imformation-->
+<!-- to send information or to gain imformation-->
 <form method="post" action="<?php echo $path . "controller/create-post.php"; ?>">
 	<div>
 		
