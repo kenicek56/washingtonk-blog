@@ -1,6 +1,6 @@
 <?php
 // access my model
-require_once(__DIR__ . "/../model/database.php");
+require_once(__DIR__ . "/../model/config.php");
 
 // gives us the nessesary function so we can use our mysqli.
 // new is a keyword that allows us to build objects within php.

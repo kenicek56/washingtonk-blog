@@ -1,7 +1,7 @@
 <?php
-require_once(__DIR__ . "/../model/database.php");
+require_once(__DIR__ . "/../model/config.php");
 // runs our query
-$connection = new mysql($host, $username, $password, $database);
+$connection = new mysqli($host, $username, $password, $database);
 
 // validates the input.
 // tells the input that we want to see the input.
@@ -15,8 +15,8 @@ $post = filter_input(INPUT_POST, "post",FILTER_SANITIZE_STRING);
 $query = $connection->query("INSERT INTO posts SET title = '$title', post ='$post'");
 // checks weather or not we have a true value in our query
 
-if (query) {
-	echo "<p>Successfully inserted post: $title</P>";
+if ($query) {
+	echo "<p>Successfully inserted post: $title</p>";
 }
 // if my query is false it will echo the erro message
 else{
