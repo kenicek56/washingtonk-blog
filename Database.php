@@ -39,7 +39,13 @@ if($this->connection->connect_error ){
 	}
 	// everytime we call on our query function we have to passed in a string and the string can be located in the variable
 	public function query($string) {
+       $this->openConnection();
+// this will exicute a query in our database
+       // takes in a string of texts the queries the string to the database below
+$query =  this->connection->query($string);
 
+$this->closeConnection();
+return $query;
 	}
 }
 //It's a way to view your code in a more intuitive, real-world way
