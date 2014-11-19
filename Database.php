@@ -31,6 +31,10 @@ if($this->connection->connect_error ){
 
 	}
 	public function closeConnection() {
+		//to tell whether or not i opened the function and if we were we are now able to close the fuction
+		if (){
+
+		}
 
 	}
 	// everytime we call on our query function we have to passed in a string and the string can be located in the variable
