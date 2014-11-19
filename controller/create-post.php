@@ -1,7 +1,7 @@
 <?php
 require_once(__DIR__ . "/../model/config.php");
 // runs our query
-$connection = new mysqli($host, $username, $password, $database);
+//$connection = new mysqli($host, $username, $password, $database);
 
 // validates the input.
 // tells the input that we want to see the input.
@@ -22,5 +22,3 @@ if ($query) {
 else{
 	echo "<p>connection->error</p>";
 }
-//closes the connection to the database
-$connection->close();
