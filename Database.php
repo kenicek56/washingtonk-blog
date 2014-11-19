@@ -32,8 +32,8 @@ if($this->connection->connect_error ){
 	}
 	public function closeConnection() {
 		//to tell whether or not i opened the function and if we were we are now able to close the fuction
-		if (){
-
+		if (isset(/*checks if there is anything in the varable if not i will be null*/ $this->connection)){
+         $this->connection->close();
 		}
 
 	}
