@@ -1,11 +1,11 @@
 body{
-	background-color: purple;
+	background-color: blue;
 }
 
   @media screen and (max-width:320px) {
-   	html{ background-color: green; }
+   	html{ background-color: pink; }
 }
 
  @media screen and (min-width:1024px) {
-   	html{ background-color: green; }
+   	html{ background-color: pink; }
 }

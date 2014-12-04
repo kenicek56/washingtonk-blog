@@ -12,7 +12,7 @@ $post = filter_input(INPUT_POST, "post",FILTER_SANITIZE_STRING);
 //inserts things in our posts
 //references the post on line 9
 // setting values within post called title and post
-$query = $connection->query("INSERT INTO posts SET title = '$title', post ='$post'");
+$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post ='$post'");
 // checks weather or not we have a true value in our query
 
 if ($query) {
@@ -20,5 +20,5 @@ if ($query) {
 }
 // if my query is false it will echo the erro message
 else{
-	echo "<p>connection->error</p>";
+	echo "<p>" . $_SESSION["connection"]->error. "</p>";
 }
