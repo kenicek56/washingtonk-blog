@@ -5,6 +5,7 @@ class Database {
 	private $username;
 	private $password;
 	private $database;
+	public $error;
 
 // local variables that will disappear once the function is finished running
 // a constructor can accept parameters in the normal manner, which are passed when the object is created
@@ -25,8 +26,40 @@ $this->connection = new mysqli($this->host, $this->username, $this->password, $t
 // to see if the connection was succesful
 // to check if its true or nah
 // connection->connect_error checks to see if there is a connection error.
-if($this->connection->connect_error ){
-	die("Error: " . $this->connection->connect_error);	
+if ($this->connection->connect_error ) {
+	die("<p>Error: " . $this->connection->connect_error . "</p>");	
+
+// gives us the nessesary function so we can use our mysqli.
+// new is a keyword that allows us to build objects within php.
+// mysqli is used to connect our objects to the database.
+//$connection = new mysqli($host, $username, $password);
+
+// to see if the connection was succesful
+// to check if its true or nah
+// connection->connect_error checks to see if there is a connection error.
+if($connection->connect_error ){
+	die("Error: " . $connection->connect_error);	
+}
+
+$exists = $this->connection->select_db($database);
+
+if(!$exists){
+	// sends commands to the database
+	$query = $this->connection->query("CREATE DATABASE $database");
+
+// checks if our query is successful
+	if($query){
+
+	echo "<p>Successfully created database: " . $database . "</p>";
+
+	}
+}
+
+//this else echos that my database is created
+else {
+	echo "<p>Database already exists.</p>";
+}
+
 } 
 
 	}
@@ -44,7 +77,12 @@ if($this->connection->connect_error ){
        // takes in a string of texts the queries the string to the database below
 $query =  this->connection->query($string);
 
+if(!$query) {
+$this->error = $this->connection->error;
+}
+
 $this->closeConnection();
+
 return $query;
 	}
 }
