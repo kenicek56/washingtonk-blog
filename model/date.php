@@ -6,6 +6,6 @@ $date = new DateTime("Today");
 $time = new DateTime('America/Los_Angeles');
 
 /*echos the date and time*/
-echo $date->format("M-D-Y") . " at " . $time->format("h:i");
+echo $date->format("M/D" . " " . "d/Y") . " at " . $time->format("h:i");
 
 ?>
