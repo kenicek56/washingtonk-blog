@@ -7,7 +7,7 @@ require_once(__DIR__ . "/../model/config.php");
 $query = $_SESSION["connection"]->query("CREATE TABLE posts (" 
 	// null indicates that when ever we create a new blog post the id cant be known and id cant be empty.
 	. "id int (11) NOT NULL AUTO_INCREMENT,"
-	. "title varchar(255) NOT NULL,"
+	. "title varchar (255) NOT NULL,"
 	. "post text NOT NULL,"
 	. "PRIMARY KEY (id))");
 // 1 means there are 11 values.
@@ -19,7 +19,7 @@ else {
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
 }
 
-$query = $_SESSION["connection"]->query("CREATE TABLE user ("
+$query = $_SESSION["connection"]->query("CREATE TABLE users ("
 	. "id int(11) NOT NULL AUTO_INCREMENT,"
 	. "username varchar(30) NOT NULL,"
 	. "email varchar(50) NOT NULL,"

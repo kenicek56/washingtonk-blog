@@ -15,7 +15,7 @@ if(!authenticateUser()) {
 	<div>
 		
 			<label for="title">Title: </label>
-			<input type"text" name"title" />
+			<input type="text" name="title" />
 		</div>
 
         <div>

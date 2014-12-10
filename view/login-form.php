@@ -14,7 +14,7 @@ require_once(__DIR__ . "/../model/date.php");
 
 <div>
     <label for="password">Password: </label>
-    <input for="password" name="password" />
+    <input type="password" name="password" />
 </div>
 
 <div>

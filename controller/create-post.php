@@ -8,7 +8,7 @@ require_once(__DIR__ . "/../model/config.php");
 $title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING);
 $post = filter_input(INPUT_POST, "post",FILTER_SANITIZE_STRING);
 
-
+echo "This is the title: " . $title;
 //establishes a query to our database
 //calls our query function
 //inserts things in our posts
