@@ -50,14 +50,14 @@ if(!$exists){
 // checks if our query is successful
 	if($query){
 
-	echo "<p>Successfully created database: " . $database . "</p>";
+	//echo "<p>Successfully created database: " . $database . "</p>";
 
 	}
 }
 
 //this else echos that my database is created
 else {
-	echo "<p>Database already exists.</p>";
+	//echo "<p>Database already exists.</p>";
 }
 
 } 

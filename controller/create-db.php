@@ -13,7 +13,7 @@ $query = $_SESSION["connection"]->query("CREATE TABLE posts ("
 // 1 means there are 11 values.
 // tells us if or query is running or not
 if($query) {
-	echo "<p>Successfully created table: posts</p>";
+	//echo "<p>Successfully created table: posts</p>";
 }
 else {
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
@@ -28,7 +28,7 @@ $query = $_SESSION["connection"]->query("CREATE TABLE users ("
 	. "PRIMARY KEY (id))");
 
 if($query) {
-	echo "<p>Successfully created table: users</p>";
+	//echo "<p>Successfully created table: users</p>";
 }
 else {
 	echo "<p>" . $_SESSION["connection"]->error . "</p>";
