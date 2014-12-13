@@ -1,0 +1,21 @@
+body{
+
+}
+.Blog-Project {
+	text-align: center;
+	border-style: double;
+	border-color: black;
+	margin-top: 10px;
+	}
+
+.post {
+	border-style: double;
+	margin-bottom: 100px;
+}
+
+.About-Me {
+	margin-left: 50px;
+	text-align: center;
+	border-style: double;
+	border-color: black;
+}
