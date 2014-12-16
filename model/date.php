@@ -1,6 +1,6 @@
 <?php
 /* creates todays date */
-$date = new DateTime("Today");
+$date = new DateTime("today");
 
 /*creates todays time*/
 $time = new DateTime('America/Los_Angeles');
