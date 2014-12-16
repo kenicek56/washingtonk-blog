@@ -1,8 +1,28 @@
+@import url("http://fonts.googleapis.com/css?family=Chango");
 body{
 	background: pink;
 	text-align: left;
 
 }
+.Blog-Project {
+	text-align: center;
+	font-size: 1000px;
+	width: cover;
+  	height: 100px;
+  	padding-bottom: 11%;
+  	background:url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrQbtkKt_H69pqxXY5zEZTglRBeDIlZrCQeT-8DAzl2IBa_-Aa");
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	-webkit-animation:moving 20s ease infinite;
+}    
+@-webkit-keyframes moving {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 500px;
+  }
+}​
 
   @media screen and (max-width:320px) {
    	html{ background-color: transparent; }
