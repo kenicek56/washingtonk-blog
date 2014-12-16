@@ -2,15 +2,15 @@ div {
 	border-style:solid;
 	border-width: 2px;
 	padding: 30px;
-	border-color: green;
+	border-color: black;
 }
 
 .container {
-	border-color: blue;
+	border-color: black;
 }
 
 .row {
-	border-color: red;
+	border-color: green;
 }
 .list-group-item{
 	border: 0;

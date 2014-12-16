@@ -5,7 +5,14 @@
 <head>
 	<title></title>
 	 <link rel="stylesheet" type="text/css" href="css/nav.css">
+
 </head>
+    <header>
+	<nav> 
+	<a href="login.php">Login</a> 
+	<a href="register.php">Register</a> 
+	<a href="post.php">Home</a>
+</header>
 <body>
 <div class="container"> 
 <div class="row"> 
@@ -24,7 +31,7 @@ $result = $_SESSION["connection"]->query($query);
 
 if ($result) {
 	while ($row = mysqli_fetch_array($result)) {
-		
+
         echo "<div class='content-box'>";
 		echo "<h2>" . $row['title'] . "</h2>";
 		echo "<p>" . $row['DateTime'] . "</p>";
