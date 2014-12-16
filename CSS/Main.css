@@ -10,7 +10,7 @@ body{
 	width: cover;
   	height: 100px;
   	padding-bottom: 11%;
-  	background:url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQrQbtkKt_H69pqxXY5zEZTglRBeDIlZrCQeT-8DAzl2IBa_-Aa");
+  	background:url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShssAv0iD8voervvC9SJKmI4sCOrDzLQ9g-oW7deeuD8h2XkA3");
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	-webkit-animation:moving 20s ease infinite;
@@ -47,10 +47,12 @@ body{
 *{@include box-sizing(border-box);}
 
 body{
+	color: black;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 16px;
 	padding-top: 102px;
 	@include transition(padding-top .5s ease);
+
 }
 header{
 	width: 100%;
@@ -72,6 +74,7 @@ header{
 		@include transition(all .3s ease);
 	}
 	nav{
+
 		position: absolute;
 		bottom: 0;
 		height: 60px;
