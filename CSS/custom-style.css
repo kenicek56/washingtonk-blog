@@ -1,6 +1,6 @@
 div {
-	border-style:solid;
-	border-width: 2px;
+	border-style:double;
+	border-width: 7px;
 	padding: 30px;
 	border-color: black;
 }
@@ -10,7 +10,7 @@ div {
 }
 
 .row {
-	border-color: green;
+	border-color: black;
 }
 .list-group-item{
 	border: 0;

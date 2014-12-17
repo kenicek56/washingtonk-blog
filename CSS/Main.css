@@ -1,19 +1,35 @@
 @import url("http://fonts.googleapis.com/css?family=Chango");
 body{
-	background: pink;
+	background:url("http://wallpoper.com/images/00/32/35/17/light-minimalistic_00323517.jpg");
+	background-size: 2000px;
 	text-align: left;
 
 }
+.navbar {
+	background:url("http://i.ytimg.com/vi/Uc1xz4mbxOk/maxresdefault.jpg");
+	background-size: 200px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	text-align: center;
+}
+
+a{
+	color: black;
+}
+
 .Blog-Project {
 	text-align: center;
-	font-size: 1000px;
+	font-size: 400px;
+	font-family: 'Montserrat';
 	width: cover;
   	height: 100px;
   	padding-bottom: 11%;
-  	background:url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShssAv0iD8voervvC9SJKmI4sCOrDzLQ9g-oW7deeuD8h2XkA3");
+  	background:url("http://i.ytimg.com/vi/Uc1xz4mbxOk/maxresdefault.jpg");
+  	background-size: 100px;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
-  	-webkit-animation:moving 20s ease infinite;
+  	-webkit-animation:moving 200s ease infinite;
+
 }    
 @-webkit-keyframes moving {
   0% {
@@ -24,6 +40,7 @@ body{
   }
 }​
 
+
   @media screen and (max-width:320px) {
    	html{ background-color: transparent; }
 }
@@ -33,71 +50,9 @@ body{
 
 }
 
-
-.content-box {
-	background-color: transparent;
-	width: 40%;
-	height: 300px;
-}
-
-.row {
-	background-color: transparent;
-	
-}
-*{@include box-sizing(border-box);}
-
-body{
-	color: black;
-	font-family: helvetica, arial, sans-serif;
-	font-size: 16px;
-	padding-top: 102px;
-	@include transition(padding-top .5s ease);
-
-}
-header{
-	width: 100%;
-	height: 100px;
-	background:url("http://i.ytimg.com/vi/Uc1xz4mbxOk/maxresdefault.jpg");
-	background-size: 300px;
+.About-Me {
+	margin-left: 50px;
 	text-align: center;
-	position: relative;
-	position: fixed;
-	top: 0;
-	overflow: hidden;
-	@include transition(all .5s ease);
-	h1{
-		font-size: 42px;
-		color: #666;
-		line-height: 230px;
-		text-transform: uppercase;
-		font-weight: 100;
-		@include transition(all .3s ease);
-	}
-	nav{
-
-		position: absolute;
-		bottom: 0;
-		height: 60px;
-		line-height: 60px;
-		width: 100%;
-		background-color: rgba(0,0,0,.1);
-		a{
-			color: #666;
-			display: inline-block;
-			padding: 10px 15px;
-			line-height: 1;
-			text-decoration: none;
-       @include border-radius(2px);
-        &:hover{
-          @include box-shadow(0 0 0 1px #fff);
-        }
-		}
-	}
-}
-h2{
-	font-size: 34px;
-	text-transform: uppercase;
-	font-weight: 100;
-	line-height: 2;
-	color: #2c3e50;
+	border-style: double;
+	border-color: black;
 }
