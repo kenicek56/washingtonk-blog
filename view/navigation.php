@@ -12,6 +12,7 @@
 		 <a href="<?php echo $path . "post.php"?>">Blog Post Form</a>
 		 <a href="login.php">Login</a> 
 		 <a href="register.php">Register</a> 
+		 <a href="logout-user.php">Logout</a>
 		
 	</ul>
 </nav>
