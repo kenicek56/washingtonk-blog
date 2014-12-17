@@ -25,7 +25,7 @@ a{
   	height: 100px;
   	padding-bottom: 11%;
   	background:url("http://i.ytimg.com/vi/Uc1xz4mbxOk/maxresdefault.jpg");
-  	background-size: 100px;
+  	background-size: 101px;
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
   	-webkit-animation:moving 200s ease infinite;
